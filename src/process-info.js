@@ -54,4 +54,4 @@ const processInfo = () => {
 
 }
 
-module.exports = processInfo();
+module.exports = processInfo;

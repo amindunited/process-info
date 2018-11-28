@@ -13,12 +13,12 @@ const expect = require('chai').expect
 
 describe('Process Info', () => {
 
-  it('should export an object', () => {
-    expect(processInfo).to.be.an('object');
+  it('should export an function', () => {
+    expect(processInfo).to.be.a('function');
   });
 
   it('should get the correct package name', () => {
-    expect(processInfo.package.name).to.equal('@amindunited/process-info');
+    expect(processInfo().package.name).to.equal('@amindunited/process-info');
   });
 
 });
